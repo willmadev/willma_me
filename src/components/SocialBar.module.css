@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  gap: 15px;
+}
+
+.container * {
+  margin: 0;
+  font-size: 2rem;
+}
+.container *:hover {
+  color: var(--link-color);
+  cursor: pointer;
+}

@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Open+Sans&family=Raleway:wght@800&display=swap");
+
+:root {
+  font-size: 12;
+  scroll-behavior: smooth;
+
+  --page-color-primary: #f7f2f9;
+  --page-color-secondary: #ffe4e4;
+  --font-color: black;
+  --link-color: #a328ae;
+  --secondary-color: #691a70;
+  background-color: var(--page-color-primary);
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 6rem;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  text-align: left;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+nav a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2.25rem;
+  text-decoration: none;
+  color: black;
+}
+
+p,
+a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  text-align: left;
+  margin: 0;
+}
+
+a {
+  color: var(--font-color);
+}
+
+a:hover {
+  color: var(--link-color);
+  cursor: pointer;
+}
+
+section {
+  width: 90%;
+  max-width: 1600px;
+  min-height: min-content;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+img {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 45rem) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+
+  p,
+  a {
+    font-size: 1rem;
+  }
+
+  section {
+    gap: 20px;
+  }
+}
